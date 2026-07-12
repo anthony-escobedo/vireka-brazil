@@ -13,14 +13,14 @@ const useCases = [
     description:
       "Contextos coletivos em que perspectivas diferentes precisam ser observadas sem forçar acordo prematuro.",
     href: links.teamClarity,
-    label: "Clareza em equipes",
+    label: "Clareza para equipes",
   },
   {
     title: "Inteligência artificial",
     description:
-      "Momentos de transferência para sistemas automáticos em que a clareza prévia pode reduzir interpretações precipitadas.",
+      "Momentos em que o contexto precisa ser organizado antes de um repasse à IA — para que a incerteza não seja tratada como fato.",
     href: links.aiHandoffClarity,
-    label: "Clareza na transferência para IA",
+    label: "Clareza no repasse à IA",
   },
 ] as const;
 
@@ -34,8 +34,8 @@ export function UseCasesSection() {
       <div className="content-section__intro">
         <h2 id="usecases-heading">Onde a clareza importa</h2>
         <p>
-          Três áreas em que a estrutura de observação pode ser útil — sem
-          prometer certeza, diagnóstico ou resultado garantido.
+          Três áreas em que organizar o contexto pode ser útil — sem prometer
+          certeza, diagnóstico, consenso ou resultado garantido.
         </p>
       </div>
       <ul className="use-case-list">

@@ -10,30 +10,30 @@ export function EntryLinks() {
       <div className="content-section__intro">
         <h2 id="entry-heading">Entrar na plataforma</h2>
         <p>
-          A experiência principal permanece em vireka.space. Este site
-          brasileiro orienta a descoberta; a plataforma oferece o espaço de
+          A experiência principal permanece em vireka.space. Esta página
+          brasileira orienta a descoberta; a plataforma oferece o espaço de
           clareza.
         </p>
       </div>
       <ul className="entry-list">
         <li>
           <a className="text-link text-link--primary" href={links.platform}>
-            Abrir VIREKA Space em português
+            Abrir a plataforma em português
           </a>
         </li>
         <li>
           <a className="text-link" href={links.method}>
-            Método
+            Conhecer o método
           </a>
         </li>
         <li>
           <a className="text-link" href={links.teamClarity}>
-            Clareza em equipes
+            Clareza para equipes
           </a>
         </li>
         <li>
           <a className="text-link" href={links.aiHandoffClarity}>
-            Clareza na transferência para IA
+            Preparar contexto para a IA
           </a>
         </li>
         <li>
@@ -43,7 +43,7 @@ export function EntryLinks() {
         </li>
         <li>
           <a className="text-link" href={links.plan}>
-            Planos
+            Ver os planos
           </a>
         </li>
       </ul>

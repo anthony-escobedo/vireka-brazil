@@ -278,7 +278,7 @@ button:focus-visible {
 
 @media (min-width: 40rem) {
   .distinction-list li {
-    grid-template-columns: 11rem 1fr;
+    grid-template-columns: minmax(11rem, 15rem) 1fr;
     gap: var(--space-md);
     align-items: baseline;
   }
@@ -326,6 +326,18 @@ button:focus-visible {
   color: var(--color-text);
   font-size: var(--type-small);
   line-height: 1.45;
+}
+
+.method-list__label {
+  margin: 0 0 var(--space-2xs);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.method-list__text {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--type-small);
 }
 
 .method-list li:last-child {

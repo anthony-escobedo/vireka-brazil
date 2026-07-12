@@ -5,7 +5,7 @@
 export const site = {
   siteName: "VIREKA Space Brasil",
   description:
-    "Espaço brasileiro de descoberta e orientação para o VIREKA Space — uma camada de clareza antes da resposta automática.",
+    "Entrada brasileira para conhecer o VIREKA Space — uma camada de clareza antes de decisões, colaboração e IA.",
   canonicalDomain: "https://virekaspace.com.br",
   globalPlatformUrl: "https://vireka.space",
   portuguesePlatformUrl: "https://vireka.space/pt-br",

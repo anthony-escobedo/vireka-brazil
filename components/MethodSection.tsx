@@ -1,13 +1,34 @@
-import { sections } from "@/lib/links";
+import { links, sections } from "@/lib/links";
 
-const methodAreas = [
-  "Situação inicial",
-  "Clareza atual",
-  "O que parece fundamentado",
-  "O que ainda pode permanecer incerto",
-  "O que pode estar influenciando",
-  "O que pode estar sendo presumido",
-  "Pergunta de esclarecimento",
+const distinctionAreas = [
+  {
+    label: "Situação inicial",
+    text: "O ponto de partida: o que está em jogo e o que parece estar acontecendo.",
+  },
+  {
+    label: "Clareza atual",
+    text: "O que já parece claro o suficiente por enquanto — sem confundir clareza com certeza.",
+  },
+  {
+    label: "O que parece fundamentado",
+    text: "O que encontra apoio no contexto disponível, ainda de forma provisória.",
+  },
+  {
+    label: "O que continua incerto",
+    text: "O que permanece em aberto e não deve ser tratado como estabelecido.",
+  },
+  {
+    label: "O que pode estar influenciando",
+    text: "Pressões, expectativas, hábitos ou condições que podem afetar a leitura da situação.",
+  },
+  {
+    label: "O que pode estar sendo pressuposto",
+    text: "Premissas que podem estar sendo tratadas como dadas sem terem sido tornadas explícitas.",
+  },
+  {
+    label: "Pergunta de esclarecimento",
+    text: "Uma pergunta que ajuda a examinar o contexto — sem exigir que toda incerteza seja resolvida.",
+  },
 ] as const;
 
 export function MethodSection() {
@@ -18,17 +39,23 @@ export function MethodSection() {
       aria-labelledby="method-heading"
     >
       <div className="content-section__intro">
-        <h2 id="method-heading">Uma estrutura para observar</h2>
+        <h2 id="method-heading">Distinções que ajudam a organizar o contexto</h2>
         <p>
-          O método organiza a atenção em áreas distintas. Não remove a
-          incerteza, não diagnostica pessoas e não cria consenso automático.
-          Serve para separar o que já parece sustentado do que ainda pede
-          cuidado.
+          Estes aspectos não formam um método em sete etapas. São distinções
+          que o VIREKA Space pode ajudar a tornar visíveis ao organizar um{" "}
+          <a className="text-link" href={links.method}>
+            quadro de clareza
+          </a>
+          . Não removem a incerteza, não diagnosticam pessoas e não criam
+          consenso.
         </p>
       </div>
       <ul className="method-list">
-        {methodAreas.map((area) => (
-          <li key={area}>{area}</li>
+        {distinctionAreas.map((area) => (
+          <li key={area.label}>
+            <p className="method-list__label">{area.label}</p>
+            <p className="method-list__text">{area.text}</p>
+          </li>
         ))}
       </ul>
     </section>

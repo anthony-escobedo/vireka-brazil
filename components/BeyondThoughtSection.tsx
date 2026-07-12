@@ -10,13 +10,13 @@ export function BeyondThoughtSection() {
       <h2 id="beyond-thought-heading">Beyond Thought</h2>
       <p>
         Beyond Thought é uma referência filosófica relacionada à atenção, à
-        interpretação e à inteligência do design. Oferece contexto intelectual
-        para a postura de observar antes de concluir.
+        interpretação e à consciência como inteligência de desenho. Oferece
+        contexto intelectual para a postura de observar antes de concluir.
       </p>
       <p>
-        A relação permanece quieta: o livro orienta a disposição; a plataforma
-        oferece estrutura prática. Beyond Thought não certifica, valida ou
-        prova o VIREKA Space.
+        A relação permanece quieta: Beyond Thought orienta a disposição; o
+        VIREKA Space oferece um ambiente prático de clareza. Beyond Thought não
+        certifica, valida ou prova o VIREKA Space.
       </p>
       <p>
         <a className="text-link" href={links.beyondThought}>

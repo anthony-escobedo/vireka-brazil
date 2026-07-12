@@ -2,24 +2,24 @@ import { sections } from "@/lib/links";
 
 const distinctions = [
   {
-    label: "Informação observada",
-    text: "O que já pode ser descrito a partir do que está presente na situação.",
+    label: "O que foi observado",
+    text: "O que foi relatado, mostrado ou registrado na situação, sem acrescentar uma interpretação.",
   },
   {
     label: "Interpretação",
-    text: "O sentido que começa a se formar antes de ser examinado com cuidado.",
+    text: "A leitura da situação que começa a se formar — distinta do que foi observado e ainda aberta a exame.",
   },
   {
     label: "Pressuposto",
-    text: "O que pode estar sendo tratado como dado sem ter sido tornado explícito.",
+    text: "Uma suposição que pode estar sendo tratada como dada sem ter sido estabelecida.",
   },
   {
-    label: "Incerteza",
-    text: "O que ainda permanece aberto e não precisa ser resolvido prematuramente.",
+    label: "O que continua incerto",
+    text: "O que permanece em aberto e não precisa ser tratado como estabelecido.",
   },
   {
-    label: "Influência",
-    text: "O que pode estar inclinando a leitura — pressão, hábito, expectativa ou contexto.",
+    label: "O que pode estar influenciando",
+    text: "Pressões, expectativas, hábitos ou condições do contexto que podem afetar a forma como a situação está sendo interpretada.",
   },
 ] as const;
 
@@ -38,9 +38,9 @@ export function ProblemSection() {
         incerto.
       </p>
       <p>
-        VIREKA Space não determina a verdade, não substitui o julgamento e não
-        garante resultados. Oferece estrutura para observar com mais cuidado
-        antes da resposta.
+        O VIREKA Space não determina a verdade, não substitui o julgamento e
+        não garante resultados. Oferece estrutura para observar com mais
+        cuidado antes da resposta.
       </p>
       <ul className="distinction-list">
         {distinctions.map((item) => (
