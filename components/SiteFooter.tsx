@@ -17,7 +17,7 @@ export function SiteFooter() {
           <a href={links.privacy}>Privacidade</a>
           <a href={links.terms}>Termos</a>
           <span className="site-footer__contact">
-            Contato:{" "}
+            E-mail:{" "}
             <a
               href={links.contactEmail}
               aria-label={`Enviar e-mail para ${site.contactEmail}`}
