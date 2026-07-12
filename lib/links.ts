@@ -15,6 +15,7 @@ export const links = {
   privacy: site.privacyUrl,
   terms: site.termsUrl,
   contact: site.contactUrl,
+  contactEmail: `mailto:${site.contactEmail}`,
   plan: "https://vireka.space/pt-br/plan",
   beyondThought: "https://vireka.space/pt-br/beyond-thought",
   globalPlatform: site.globalPlatformUrl,

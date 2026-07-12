@@ -445,6 +445,12 @@ button:focus-visible {
   gap: var(--space-sm) var(--space-md);
 }
 
+.site-footer__contact {
+  color: var(--color-text-muted);
+  font-size: var(--type-small);
+  padding: var(--space-2xs) 0;
+}
+
 .site-footer__nav a {
   color: var(--color-text-muted);
   font-size: var(--type-small);

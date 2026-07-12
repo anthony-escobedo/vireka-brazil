@@ -15,6 +15,7 @@ export const site = {
   locale: "pt-BR",
   openGraphLocale: "pt_BR",
   contactUrl: "https://vireka.space/pt-br/contact",
+  contactEmail: "contato@virekaspace.com.br",
   privacyUrl: "https://vireka.space/pt-br/privacy",
   termsUrl: "https://vireka.space/pt-br/terms",
 } as const;

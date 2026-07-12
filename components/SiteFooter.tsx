@@ -16,7 +16,15 @@ export function SiteFooter() {
           <a href={links.about}>Sobre o VIREKA Space</a>
           <a href={links.privacy}>Privacidade</a>
           <a href={links.terms}>Termos</a>
-          <a href={links.contact}>Contato</a>
+          <span className="site-footer__contact">
+            Contato:{" "}
+            <a
+              href={links.contactEmail}
+              aria-label={`Enviar e-mail para ${site.contactEmail}`}
+            >
+              {site.contactEmail}
+            </a>
+          </span>
           <a href={links.plan}>Ver os planos</a>
         </nav>
         <p className="site-footer__copy">
