@@ -23,13 +23,18 @@ Do not add to this repository:
 - private-user data handling
 - a second product platform
 
-## Current phase (BR-2A)
+## Current phase (BR-3)
 
-Visual foundation: restrained design system, responsive page composition, and provisional Brazilian Portuguese copy on the BR-1 structural base.
+Technical foundation for SEO metadata, social sharing, accessibility verification, and privacy-bounded Vercel Web Analytics (page views).
 
-The Brazilian sitemap currently contains only the root URL: `https://virekaspace.com.br/`.
+Canonical metadata uses `https://virekaspace.com.br/` even while the temporary Vercel deployment is the review host. Custom-domain cutover is BR-4.
 
-Final Portuguese semantic approval, final SEO metadata, and production domain cutover remain out of scope.
+### Analytics
+
+- Package: `@vercel/analytics`
+- Integration: page views via `<Analytics />` in the root layout
+- Custom click events: not implemented (require confirmed Pro/Enterprise eligibility)
+- Manual dashboard step: enable Web Analytics in the Vercel project `vireka-brazil` after deploy
 
 ## Local development
 
@@ -52,4 +57,4 @@ git diff --check
 
 ## Deployment target
 
-Static/SSR Next.js deployment (Vercel or equivalent). Domain DNS, Search Console, and email providers are configured outside this repository and are not part of BR-2A.
+Vercel project `vireka-brazil` (GitHub `main`). Domain DNS, Search Console, and email providers remain outside this repository (BR-4+).

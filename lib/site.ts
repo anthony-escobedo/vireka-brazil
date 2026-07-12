@@ -4,8 +4,11 @@
  */
 export const site = {
   siteName: "VIREKA Space Brasil",
+  title: "VIREKA Space Brasil | Clareza antes de decisões e da IA",
   description:
-    "Entrada brasileira para conhecer o VIREKA Space — uma camada de clareza antes de decisões, colaboração e IA.",
+    "Organize observações, interpretações, pressupostos e incertezas antes de tomar decisões ou preparar contexto para uma inteligência artificial.",
+  shortDescription:
+    "Uma entrada brasileira para conhecer o VIREKA Space.",
   canonicalDomain: "https://virekaspace.com.br",
   globalPlatformUrl: "https://vireka.space",
   portuguesePlatformUrl: "https://vireka.space/pt-br",
