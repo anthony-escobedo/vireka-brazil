@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 
-/** Brazilian site sitemap — root URL only in BR-1. */
+/** Brazilian site sitemap — root URL only. */
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {

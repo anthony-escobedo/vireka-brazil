@@ -14,16 +14,18 @@ export function MethodSection() {
   return (
     <section
       id={sections.method}
-      className="content-section"
+      className="content-section content-section--wide"
       aria-labelledby="method-heading"
     >
-      <h2 id="method-heading">Uma estrutura para observar</h2>
-      <p>
-        O método organiza a atenção em áreas distintas. Não remove a
-        incerteza, não diagnostica pessoas e não cria consenso automático.
-        Serve para separar o que já parece sustentado do que ainda pede
-        cuidado.
-      </p>
+      <div className="content-section__intro">
+        <h2 id="method-heading">Uma estrutura para observar</h2>
+        <p>
+          O método organiza a atenção em áreas distintas. Não remove a
+          incerteza, não diagnostica pessoas e não cria consenso automático.
+          Serve para separar o que já parece sustentado do que ainda pede
+          cuidado.
+        </p>
+      </div>
       <ul className="method-list">
         {methodAreas.map((area) => (
           <li key={area}>{area}</li>

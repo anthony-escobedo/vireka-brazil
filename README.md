@@ -23,13 +23,13 @@ Do not add to this repository:
 - private-user data handling
 - a second product platform
 
-## Current phase (BR-1)
+## Current phase (BR-2A)
 
-Foundation only: site identity, centralized PT-BR platform links, structural page shell, accessibility baseline, robots, and sitemap.
+Visual foundation: restrained design system, responsive page composition, and provisional Brazilian Portuguese copy on the BR-1 structural base.
 
 The Brazilian sitemap currently contains only the root URL: `https://virekaspace.com.br/`.
 
-Final marketing copy, visual design polish, and SEO claims are out of scope for BR-1.
+Final Portuguese semantic approval, final SEO metadata, and production domain cutover remain out of scope.
 
 ## Local development
 
@@ -52,4 +52,4 @@ git diff --check
 
 ## Deployment target
 
-Static/SSR Next.js deployment (Vercel or equivalent). Domain DNS, Search Console, and email providers are configured outside this repository and are not part of BR-1.
+Static/SSR Next.js deployment (Vercel or equivalent). Domain DNS, Search Console, and email providers are configured outside this repository and are not part of BR-2A.

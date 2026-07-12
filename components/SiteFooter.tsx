@@ -7,26 +7,20 @@ export function SiteFooter() {
       <div className="site-footer__inner">
         <p className="site-footer__brand">{site.siteName}</p>
         <p className="site-footer__note">
-          A plataforma principal permanece em{" "}
-          <a href={links.globalPlatform} rel="noopener noreferrer">
-            vireka.space
-          </a>
-          .
+          Camada brasileira de descoberta. A plataforma principal permanece em{" "}
+          <a href={links.globalPlatform}>vireka.space</a>.
         </p>
         <nav className="site-footer__nav" aria-label="Rodapé">
-          <a href={links.privacy} rel="noopener noreferrer">
-            Privacidade
-          </a>
-          <a href={links.terms} rel="noopener noreferrer">
-            Termos
-          </a>
-          <a href={links.contact} rel="noopener noreferrer">
-            Contato
-          </a>
-          <a href={links.globalPlatform} rel="noopener noreferrer">
-            Plataforma global
-          </a>
+          <a href={links.platform}>Plataforma</a>
+          <a href={links.about}>Sobre</a>
+          <a href={links.privacy}>Privacidade</a>
+          <a href={links.terms}>Termos</a>
+          <a href={links.contact}>Contato</a>
+          <a href={links.plan}>Planos</a>
         </nav>
+        <p className="site-footer__copy">
+          © {new Date().getFullYear()} VIREKA Space
+        </p>
       </div>
     </footer>
   );

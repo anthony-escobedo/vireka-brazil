@@ -9,16 +9,10 @@ export function SiteHeader() {
           {site.siteName}
         </a>
         <nav className="site-header__nav" aria-label="Navegação da página">
-          <a href={`#${sections.problem}`}>Contexto</a>
           <a href={`#${sections.method}`}>Método</a>
-          <a href={`#${sections.useCases}`}>Usos</a>
-          <a href={`#${sections.entry}`}>Entrada</a>
-          <a
-            href={links.platform}
-            rel="noopener noreferrer"
-          >
-            Plataforma
-          </a>
+          <a href={`#${sections.useCases}`}>Aplicações</a>
+          <a href={`#${sections.beyondThought}`}>Beyond Thought</a>
+          <a href={links.platform}>Plataforma</a>
         </nav>
       </div>
     </header>

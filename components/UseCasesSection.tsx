@@ -4,7 +4,7 @@ const useCases = [
   {
     title: "Decisões",
     description:
-      "Situações em que a pressa por concluir pode obscurecer o que ainda precisa ser esclarecido.",
+      "Situações em que a pressa por concluir pode obscurecer o que ainda precisa ser esclarecido antes de escolher um caminho.",
     href: links.clarityBeforeAi,
     label: "Clareza antes da IA",
   },
@@ -28,20 +28,22 @@ export function UseCasesSection() {
   return (
     <section
       id={sections.useCases}
-      className="content-section"
+      className="content-section content-section--wide"
       aria-labelledby="usecases-heading"
     >
-      <h2 id="usecases-heading">Onde a clareza importa</h2>
-      <p>
-        Três áreas em que a estrutura de observação pode ser útil — sem
-        prometer certeza, diagnóstico ou resultado garantido.
-      </p>
+      <div className="content-section__intro">
+        <h2 id="usecases-heading">Onde a clareza importa</h2>
+        <p>
+          Três áreas em que a estrutura de observação pode ser útil — sem
+          prometer certeza, diagnóstico ou resultado garantido.
+        </p>
+      </div>
       <ul className="use-case-list">
         {useCases.map((item) => (
           <li key={item.title} className="use-case">
             <h3>{item.title}</h3>
             <p>{item.description}</p>
-            <a className="text-link" href={item.href} rel="noopener noreferrer">
+            <a className="text-link" href={item.href}>
               {item.label}
             </a>
           </li>
