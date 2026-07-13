@@ -1,4 +1,4 @@
-import { externalSrLabel, links, sections } from "@/lib/links";
+import { links, sections } from "@/lib/links";
 import { site } from "@/lib/site";
 
 export function SiteHeader() {
@@ -18,7 +18,7 @@ export function SiteHeader() {
               {" "}
               ↗
             </span>
-            <span className="sr-only">{externalSrLabel}</span>
+            <span className="sr-only">, no site principal do VIREKA Space</span>
           </a>
         </nav>
       </div>

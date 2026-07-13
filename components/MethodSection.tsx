@@ -1,4 +1,4 @@
-import { externalSrLabel, links, sections } from "@/lib/links";
+import { links, sections } from "@/lib/links";
 
 const distinctionAreas = [
   {
@@ -45,7 +45,6 @@ export function MethodSection() {
           Space, aspectos relevantes do contexto podem ser organizados em um{" "}
           <a className="text-link" href={links.method}>
             quadro de clareza
-            <span className="sr-only">{externalSrLabel}</span>
           </a>{" "}
           composto por áreas como as apresentadas a seguir. Essas áreas não
           formam um método em sete etapas: ajudam a tornar visíveis diferentes

@@ -23,9 +23,6 @@ export const links = {
 
 export type PlatformLinks = typeof links;
 
-/** Screen-reader supplement for cross-domain links to the canonical platform. */
-export const externalSrLabel = "(abre em vireka.space)" as const;
-
 /** In-page section anchors for the Brazilian landing page. */
 export const sections = {
   hero: "inicio",

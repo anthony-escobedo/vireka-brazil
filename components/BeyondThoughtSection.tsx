@@ -1,4 +1,4 @@
-import { externalSrLabel, links, sections } from "@/lib/links";
+import { links, sections } from "@/lib/links";
 
 export function BeyondThoughtSection() {
   return (
@@ -25,7 +25,7 @@ export function BeyondThoughtSection() {
             {" "}
             ↗
           </span>
-          <span className="sr-only">{externalSrLabel}</span>
+          <span className="sr-only">, no site principal do VIREKA Space</span>
         </a>
       </p>
     </section>

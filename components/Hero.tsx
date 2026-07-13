@@ -1,4 +1,4 @@
-import { externalSrLabel, links, sections } from "@/lib/links";
+import { links, sections } from "@/lib/links";
 
 export function Hero() {
   return (
@@ -21,11 +21,10 @@ export function Hero() {
           <span className="text-link__arrow" aria-hidden="true">
             →
           </span>
-          <span className="sr-only">{externalSrLabel}</span>
+          <span className="sr-only">, no site principal do VIREKA Space</span>
         </a>
         <a className="text-link" href={links.method}>
           Conhecer o método
-          <span className="sr-only">{externalSrLabel}</span>
         </a>
       </p>
     </section>
