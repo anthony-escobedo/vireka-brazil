@@ -1,4 +1,4 @@
-import { links, sections } from "@/lib/links";
+import { externalSrLabel, links, sections } from "@/lib/links";
 
 export function EntryLinks() {
   return (
@@ -19,31 +19,40 @@ export function EntryLinks() {
         <li>
           <a className="text-link text-link--primary" href={links.platform}>
             Abrir a plataforma em português
+            <span className="text-link__arrow" aria-hidden="true">
+              →
+            </span>
+            <span className="sr-only">{externalSrLabel}</span>
           </a>
         </li>
         <li>
           <a className="text-link" href={links.method}>
             Conhecer o método
+            <span className="sr-only">{externalSrLabel}</span>
           </a>
         </li>
         <li>
           <a className="text-link" href={links.teamClarity}>
             Clareza para equipes
+            <span className="sr-only">{externalSrLabel}</span>
           </a>
         </li>
         <li>
           <a className="text-link" href={links.aiHandoffClarity}>
             Preparar contexto para a IA
+            <span className="sr-only">{externalSrLabel}</span>
           </a>
         </li>
         <li>
           <a className="text-link" href={links.faq}>
             Perguntas frequentes
+            <span className="sr-only">{externalSrLabel}</span>
           </a>
         </li>
         <li>
           <a className="text-link" href={links.plan}>
             Ver os planos
+            <span className="sr-only">{externalSrLabel}</span>
           </a>
         </li>
       </ul>

@@ -1,4 +1,4 @@
-import { links, sections } from "@/lib/links";
+import { externalSrLabel, links, sections } from "@/lib/links";
 
 export function BeyondThoughtSection() {
   return (
@@ -21,6 +21,11 @@ export function BeyondThoughtSection() {
       <p>
         <a className="text-link" href={links.beyondThought}>
           Ler sobre Beyond Thought
+          <span className="text-link__external-marker" aria-hidden="true">
+            {" "}
+            ↗
+          </span>
+          <span className="sr-only">{externalSrLabel}</span>
         </a>
       </p>
     </section>

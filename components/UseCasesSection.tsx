@@ -1,4 +1,4 @@
-import { links, sections } from "@/lib/links";
+import { externalSrLabel, links, sections } from "@/lib/links";
 
 const useCases = [
   {
@@ -45,6 +45,7 @@ export function UseCasesSection() {
             <p>{item.description}</p>
             <a className="text-link" href={item.href}>
               {item.label}
+              <span className="sr-only">{externalSrLabel}</span>
             </a>
           </li>
         ))}

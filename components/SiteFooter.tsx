@@ -1,4 +1,4 @@
-import { links } from "@/lib/links";
+import { externalSrLabel, links } from "@/lib/links";
 import { site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -10,10 +10,18 @@ export function SiteFooter() {
           Entrada brasileira para conhecer o VIREKA Space.
         </p>
         <nav className="site-footer__nav" aria-label="Rodapé">
-          <a href={links.platform}>Plataforma</a>
-          <a href={links.about}>Sobre o VIREKA Space</a>
-          <a href={links.privacy}>Privacidade</a>
-          <a href={links.terms}>Termos</a>
+          <a href={links.about}>
+            Sobre o VIREKA Space
+            <span className="sr-only">{externalSrLabel}</span>
+          </a>
+          <a href={links.privacy}>
+            Privacidade
+            <span className="sr-only">{externalSrLabel}</span>
+          </a>
+          <a href={links.terms}>
+            Termos
+            <span className="sr-only">{externalSrLabel}</span>
+          </a>
           <span className="site-footer__contact">
             E-mail:{" "}
             <a
@@ -23,7 +31,6 @@ export function SiteFooter() {
               {site.contactEmail}
             </a>
           </span>
-          <a href={links.plan}>Ver os planos</a>
         </nav>
         <p className="site-footer__copy">
           © {new Date().getFullYear()} VIREKA Space

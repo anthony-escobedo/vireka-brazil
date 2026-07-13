@@ -1,4 +1,4 @@
-import { links, sections } from "@/lib/links";
+import { externalSrLabel, links, sections } from "@/lib/links";
 
 export function Hero() {
   return (
@@ -18,9 +18,14 @@ export function Hero() {
       <p className="hero__actions">
         <a className="text-link text-link--primary" href={links.platform}>
           Abrir a plataforma em português
+          <span className="text-link__arrow" aria-hidden="true">
+            →
+          </span>
+          <span className="sr-only">{externalSrLabel}</span>
         </a>
         <a className="text-link" href={links.method}>
           Conhecer o método
+          <span className="sr-only">{externalSrLabel}</span>
         </a>
       </p>
     </section>

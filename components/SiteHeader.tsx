@@ -1,4 +1,4 @@
-import { links, sections } from "@/lib/links";
+import { externalSrLabel, links, sections } from "@/lib/links";
 import { site } from "@/lib/site";
 
 export function SiteHeader() {
@@ -9,10 +9,17 @@ export function SiteHeader() {
           {site.siteName}
         </a>
         <nav className="site-header__nav" aria-label="Navegação da página">
-          <a href={`#${sections.method}`}>Distinções</a>
+          <a href={`#${sections.problem}`}>Distinções</a>
           <a href={`#${sections.useCases}`}>Aplicações</a>
           <a href={`#${sections.beyondThought}`}>Beyond Thought</a>
-          <a href={links.platform}>Plataforma</a>
+          <a href={links.platform}>
+            Plataforma
+            <span className="text-link__external-marker" aria-hidden="true">
+              {" "}
+              ↗
+            </span>
+            <span className="sr-only">{externalSrLabel}</span>
+          </a>
         </nav>
       </div>
     </header>
