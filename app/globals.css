@@ -168,7 +168,7 @@ button:focus-visible {
   width: 100%;
   max-width: var(--measure-wide);
   margin: 0 auto;
-  padding: var(--space-xl) var(--page-pad-x) var(--space-3xl);
+  padding: var(--space-xl) var(--page-pad-x) var(--space-2xl);
 }
 
 .hero {
@@ -230,6 +230,10 @@ button:focus-visible {
 
 .content-section--wide {
   max-width: var(--measure-wide);
+}
+
+.content-section--entry {
+  padding-bottom: var(--space-lg);
 }
 
 .content-section__intro {
@@ -344,12 +348,6 @@ button:focus-visible {
   grid-column: 1 / -1;
 }
 
-@media (min-width: 64rem) {
-  .method-list li:last-child {
-    grid-column: auto;
-  }
-}
-
 .use-case-list {
   margin: var(--space-lg) 0 0;
   padding: 0;
@@ -406,7 +404,44 @@ button:focus-visible {
 }
 
 .text-link--primary {
-  font-weight: 500;
+  display: inline-block;
+  font-weight: 600;
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.25em;
+  text-decoration-color: color-mix(in srgb, var(--color-link) 50%, transparent);
+  padding: var(--space-2xs) 0;
+  transition: color 0.15s ease;
+}
+
+.text-link--primary::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 0.35em;
+  font-weight: 400;
+  transition: transform 0.15s ease;
+}
+
+.text-link--primary:hover,
+.text-link--primary:focus-visible {
+  color: var(--color-link-hover);
+}
+
+.text-link--primary:hover::after,
+.text-link--primary:focus-visible::after {
+  transform: translateX(3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-link--primary::after {
+    transition: none;
+  }
+
+  .text-link--primary:hover::after,
+  .text-link--primary:focus-visible::after {
+    transform: none;
+  }
 }
 
 .beyond-thought {

@@ -4,7 +4,7 @@ export function EntryLinks() {
   return (
     <section
       id={sections.entry}
-      className="content-section content-section--wide"
+      className="content-section content-section--wide content-section--entry"
       aria-labelledby="entry-heading"
     >
       <div className="content-section__intro">
