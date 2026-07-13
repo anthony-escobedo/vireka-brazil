@@ -42,6 +42,10 @@ export function ProblemSection() {
         não garante resultados. Oferece estrutura para observar com mais
         cuidado antes da resposta.
       </p>
+      <p>
+        Algumas distinções ajudam a examinar o que está acontecendo antes de
+        concluir.
+      </p>
       <ul className="distinction-list">
         {distinctions.map((item) => (
           <li key={item.label}>

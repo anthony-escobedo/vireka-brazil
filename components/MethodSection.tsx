@@ -41,13 +41,14 @@ export function MethodSection() {
       <div className="content-section__intro">
         <h2 id="method-heading">Distinções que ajudam a organizar o contexto</h2>
         <p>
-          Estes aspectos não formam um método em sete etapas. São distinções
-          que o VIREKA Space pode ajudar a tornar visíveis ao organizar um{" "}
+          As distinções anteriores ajudam a examinar a situação. No VIREKA
+          Space, aspectos relevantes do contexto podem ser organizados em um{" "}
           <a className="text-link" href={links.method}>
             quadro de clareza
           </a>
-          . Não removem a incerteza, não diagnosticam pessoas e não criam
-          consenso.
+          , como os apresentados a seguir. Não formam um método em sete etapas:
+          ajudam a torná-las visíveis, sem remover a incerteza, diagnosticar
+          pessoas ou criar consenso.
         </p>
       </div>
       <ul className="method-list">

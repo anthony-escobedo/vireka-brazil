@@ -7,9 +7,7 @@ export function SiteFooter() {
       <div className="site-footer__inner">
         <p className="site-footer__brand">{site.siteName}</p>
         <p className="site-footer__note">
-          Entrada brasileira para conhecer o VIREKA Space. A plataforma
-          principal permanece em{" "}
-          <a href={links.globalPlatform}>vireka.space</a>.
+          Entrada brasileira para conhecer o VIREKA Space.
         </p>
         <nav className="site-footer__nav" aria-label="Rodapé">
           <a href={links.platform}>Plataforma</a>
