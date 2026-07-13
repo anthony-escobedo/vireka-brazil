@@ -45,10 +45,11 @@ export function MethodSection() {
           Space, aspectos relevantes do contexto podem ser organizados em um{" "}
           <a className="text-link" href={links.method}>
             quadro de clareza
-          </a>
-          , como os apresentados a seguir. Não formam um método em sete etapas:
-          ajudam a torná-las visíveis, sem remover a incerteza, diagnosticar
-          pessoas ou criar consenso.
+          </a>{" "}
+          composto por áreas como as apresentadas a seguir. Essas áreas não
+          formam um método em sete etapas: ajudam a tornar visíveis diferentes
+          aspectos do contexto sem remover a incerteza, diagnosticar pessoas ou
+          criar consenso.
         </p>
       </div>
       <ul className="method-list">

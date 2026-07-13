@@ -18,7 +18,7 @@ const useCases = [
   {
     title: "Inteligência artificial",
     description:
-      "Antes de repassar contexto à IA, organizá-lo pode delimitar o que está estabelecido e o que permanece incerto, sem apresentar a incerteza como fato.",
+      "Antes de repassar contexto à IA, organizá-lo pode delimitar o que está estabelecido e o que permanece incerto, sem apresentar como estabelecido aquilo que ainda está em aberto.",
     href: links.aiHandoffClarity,
     label: "Clareza no repasse à IA",
   },
